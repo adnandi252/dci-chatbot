@@ -617,9 +617,9 @@ flowchart TB
     end
 
     subgraph RAG["🧠 RAG Core (rag_chatbot.py)"]
-        Load_"load_existing_index()"
-        Index_"load_and_index_pdfs()"
-        Setup_"setup_rag_chain()"
+        Load_["load_existing_index()"]
+        Index_["load_and_index_pdfs()"]
+        Setup_["setup_rag_chain()"]
     end
 
     subgraph Groq["☁️ Groq Cloud"]
