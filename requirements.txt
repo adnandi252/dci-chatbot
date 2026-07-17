@@ -1,0 +1,26 @@
+# ============================================================
+# RAG Chatbot - Requirements
+# ============================================================
+# Cara install: pip install -r requirements.txt
+
+# --- LangChain Ecosystem ---
+langchain>=0.3.0
+langchain-groq>=0.2.0          # Integrasi Groq API (Llama 3)
+langchain-huggingface>=0.1.0   # Integrasi HuggingFace Embeddings
+langchain-community>=0.3.0     # Community integrations (FAISS, PDF loaders)
+langchain-text-splitters>=0.3.0  # Text splitter (pisahan dari langchain 0.3.x)
+
+# --- Embedding (Lokal, GRATIS) ---
+sentence-transformers>=3.0.0   # Untuk all-MiniLM-L6-v2
+
+# --- Vector Store ---
+faiss-cpu>=1.9.0               # FAISS untuk penyimpanan vektor lokal
+
+# --- Document Loader ---
+pypdf>=5.0.0                   # Membaca file PDF
+
+# --- Web Server ---
+flask>=3.0.0                  # Web framework untuk interface HTML
+
+# --- Environment Variables ---
+python-dotenv>=1.0.0           # Load .env file
