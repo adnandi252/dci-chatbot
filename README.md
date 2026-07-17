@@ -1,4 +1,4 @@
-# 📘 DOKUMEN TEKNIS — RAG Chatbot
+# RAG Chatbot
 
 <p align="center">
   <strong>Retrieval-Augmented Generation Chatbot</strong><br>
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Daftar Isi
+## Daftar Isi
 
 1. [Ikhtisar Proyek](#1-ikhtisar-proyek)
 2. [Arsitektur Sistem](#2-arsitektur-sistem)
@@ -208,36 +208,22 @@ flowchart LR
 
 ## 4. Struktur Proyek
 
-```mermaid
-mindmap
-  root((rag-chatbot))
-    data
-      (contoh.pdf)
-      (📁 PDF files here)
-    faiss_index
-      index.faiss
-        [File index vektor biner]
-      index.pkl
-        [File pickle metadata]
-    screenshots
-      (📁 Testing evidence)
-    templates
-      index.html
-        [Antarmuka web chatbot]
-    rag_chatbot.py
-      [🐍 Kode utama RAG - mode terminal]
-    web_app.py
-      [🐍 Web interface Flask]
-    requirements.txt
-      [📄 Daftar dependency Python]
-    .env.example
-      [📄 Contoh environment variables]
-    .env
-      [📄 Environment variables (user-created)]
-    README.md
-      [📄 Panduan lengkap proyek]
-    DOKUMEN_TEKNIS.md
-      [📄 Dokumen teknis ini]
+```text
+rag-chatbot/
+├── data/
+│   ├── contoh.pdf
+│   └── (PDF files here)
+├── faiss_index/
+│   ├── index.faiss        # File index vektor biner
+│   └── index.pkl          # File pickle metadata
+├── screenshots/           # (Testing evidence)
+├── templates/
+│   └── index.html         # Antarmuka web chatbot
+├── rag_chatbot.py         # Kode utama RAG - mode terminal
+├── web_app.py             # Web interface Flask
+├── requirements.txt       # Daftar dependency Python
+├── .env.example           # Contoh environment variables
+└── README.md 
 ```
 
 ---
@@ -1337,8 +1323,3 @@ flowchart TB
 - [Mermaid Documentation](https://mermaid.js.org/)
 
 ---
-
-<p align="center">
-  <strong>Dibuat untuk tugas "Membangun Chatbot RAG"</strong><br>
-  <em>AI Engineer & Senior Python Developer</em>
-</p>
